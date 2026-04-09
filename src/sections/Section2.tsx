@@ -56,10 +56,8 @@ export default function Section2() {
             md:top-[-75px] md:left-[460px] md:w-[423px] md:h-[528.65]"
           />
 
-          {/* SCREEN container*/}
           <div className="relative inline-block">
 
-            {/* SCREEN */}
             <Image
               src="/images/screen.png"
               alt="screen"
@@ -68,7 +66,6 @@ export default function Section2() {
               className="relative z-10 rounded-[20px]"
             />
 
-            {/* LINES */}
             <Image
               src="/images/Lines.png"
               alt="lines"
@@ -77,7 +74,6 @@ export default function Section2() {
               className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 z-0"
             />
 
-            {/* ICONS*/}
             <div className="absolute bottom-[-80px] left-0 w-full flex justify-between z-10">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
                 <Image

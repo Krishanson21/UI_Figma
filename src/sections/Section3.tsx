@@ -9,7 +9,6 @@ export default function Section3() {
 
                 {/* LEFT */}
                 <div className="flex flex-col w-full md:w-[544px] gap-[32px] text-[#0F172A]">
-                    {/* HEADING */}
                     <h2 className="font-[800] text-[32px] md:text-[56px] leading-[110%] tracking-[0]">
                         An{" "}
                         <span className="relative inline-block">
@@ -34,15 +33,13 @@ export default function Section3() {
                         <p>✔ Ullamcorper ornare in et egestas dolor orci.</p>
 
                     </div>
-                    {/* LINK */}
                     <div className="flex items-center justify-between w-[277px] h-[56px] px-[8px] py-[16px] rounded-[8px] text-[#2563EB] font-[500] text-[20px] leading-[24px] tracking-[0.5px] cursor-pointer">
                         <span>Find more about the app →</span>
                     </div>
                 </div>
 
-                {/* RIGHT SIDE */}
+                {/* RIGHT */}
                 <div className="relative w-full md:w-[700px] flex flex-col items-center md:block">
-                    {/* BLOB */}
                     <Image
                         src="/images/Blob3.png"
                         alt=""
@@ -58,7 +55,6 @@ export default function Section3() {
                         height={582}
                         className="absolute left-[100px] top-[-160px] md:left-[-100px] md:top-[-10px] md:w-[139px] md:h-[582px] rotate-[180deg] z-0"
                     />
-                    {/* MAIN IMAGE */}
                     <Image
                         src="/images/Desktop.png"
                         alt=""

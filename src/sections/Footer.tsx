@@ -19,7 +19,6 @@ export default function Footer() {
                         />
                     </div>
 
-                    {/* COLUMN */}
                     <div className="flex flex-col gap-[16px] w-[173.33px]">
                         <h4 className="font-[500] text-[16px] leading-[110%]">Product</h4>
                         <p className="font-[400] text-[16px] leading-[140%]">Pricing</p>
@@ -33,7 +32,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* COLUMN */}
                     <div className="flex flex-col gap-[16px] w-[173.33px]">
                         <h4 className="font-[500] text-[16px] leading-[110%]">Solutions</h4>
                         <p className="font-[400] text-[16px] leading-[140%]">Brainstorming</p>
@@ -42,7 +40,6 @@ export default function Footer() {
                         <p className="font-[400] text-[16px] leading-[140%]">Research</p>
                     </div>
 
-                    {/* COLUMN */}
                     <div className="flex flex-col gap-[16px] w-[173.33px]">
                         <h4 className="font-[500] text-[16px] leading-[110%]">Resources</h4>
                         <p className="font-[400] text-[16px] leading-[140%]">Help Center</p>
@@ -51,7 +48,6 @@ export default function Footer() {
                         <p className="font-[400] text-[16px] leading-[140%]">FAQs</p>
                     </div>
 
-                    {/* COLUMN */}
                     <div className="flex flex-col gap-[16px] w-[173.33px]">
                         <h4 className="font-[500] text-[16px] leading-[110%]">Support</h4>
                         <p className="font-[400] text-[16px] leading-[140%]">Contact Us</p>
@@ -60,7 +56,6 @@ export default function Footer() {
                         <p className="font-[400] text-[16px] leading-[140%]">Integrations</p>
                     </div>
 
-                    {/* COLUMN */}
                     <div className="flex flex-col gap-[16px] w-[173.33px]">
                         <h4 className="font-[500] text-[16px] leading-[110%]">Company</h4>
                         <p className="font-[400] text-[16px] leading-[140%]">About</p>
@@ -75,7 +70,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* DIVIDER */}
             <div className="w-full px-[20px] md:px-[80px]">
                 <div className="max-w-[1280px] mx-auto border-t border-[#1E293B]" />
             </div>
@@ -85,12 +79,10 @@ export default function Footer() {
 
                 <div className="max-w-[1330px] mx-auto flex flex-col md:flex-row items-center justify-between gap-[24px] md:gap-[48px]">
 
-                    {/* LEFT */}
                     <p className="font-[400] text-[16px] leading-[140%] text-[#E2E8F0]">
                         uteach @ 2023. All rights reserved.
                     </p>
 
-                    {/* RIGHT */}
                     <div className="flex flex-wrap md:flex-nowrap items-center gap-[16px] md:gap-[32px] text-[#E2E8F0] font-[400] text-[16px] leading-[140%]">
 
                         <span>Terms</span>

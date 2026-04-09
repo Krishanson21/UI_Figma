@@ -14,12 +14,11 @@ export default function Section1() {
 
               <span className="relative inline-block">
 
-                {/* TEXT */}
                 <span className="relative z-10">
                   Teach
                 </span>
 
-                {/* VECTOR (behind) */}
+                {/* VECTOR*/}
                 <Image
                   src="/images/vector14.png"
                   alt="underline"
@@ -43,12 +42,10 @@ export default function Section1() {
             {/* Buttons*/}
             <div className="flex flex-row items-center gap-[16px] md:gap-[32px] sm:flex-row items-start sm:items-center gap-[16px] md:gap-[32px]">
 
-              {/* Sign Up */}
               <button className="flex items-center justify-center w-auto sm:w-[239px] h-[64px] px-[34px] py-[20px] bg-[#EA580C] border-[2px] border-[#EA580C] rounded-[8px] text-white font-[500] text-[20px] leading-[24px] tracking-[0.5px]">
                 Sign Up Now
               </button>
 
-              {/* View Demo */}
               <div className="flex items-center gap-[8px] w-auto sm:w-[178px] h-[56px] px-[8px] py-[16px] text-[#2563EB] font-[500] text-[20px] leading-[24px] tracking-[0.5px] cursor-pointer">
                 <Image
                   src="/icons/demo.png"
@@ -63,16 +60,14 @@ export default function Section1() {
 
           </div>
 
-          {/* TRUSTED ROW */}
+          {/* TRUSTED TEXT*/}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-[16px] md:gap-[48px] w-full md:w-[575px]">
 
-            {/* Text */}
             <p className="font-[400] text-[16px] leading-[140%] tracking-[0] text-[#475569]">
               Trusted by <br />
               leading companies
             </p>
 
-            {/* Logos */}
             <div className="flex items-center gap-[24px] md:gap-[45px] flex-wrap">
               <Image src="/icons/col1.png" alt="" width={32} height={32} />
               <Image src="/icons/col2.png" alt="" width={32} height={32} />

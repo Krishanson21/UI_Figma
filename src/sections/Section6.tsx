@@ -14,7 +14,6 @@ export default function Section6() {
                     What everyone says
                 </h2>
 
-                {/* ARROWS */}
                 <div className="hidden md:flex items-center gap-[16px]">
 
                     <button onClick={scrollLeft} className="w-[48px] h-[48px] text-[#EA580C] font-[900] md:text-[32px] rounded-full border-[2px] border-[#EA580C] flex items-center justify-center">
