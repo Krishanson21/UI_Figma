@@ -48,7 +48,7 @@ export default function Section7() {
         <div className="relative w-full md:w-[600px] h-auto md:h-[500px]">
           {/* ICON STRIP */}
           <Image
-            src="/images/icons.png"
+            src="/images/Icons.png"
             alt=""
             width={139}
             height={582}

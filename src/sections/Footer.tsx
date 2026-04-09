@@ -12,7 +12,7 @@ export default function Footer() {
                     {/* LOGO */}
                     <div className="col-span-1 md:col-span-1 w-[173.33px] h-[35px]">
                         <Image
-                            src="/images/logo2.png"
+                            src="/images/Logo2.png"
                             alt="logo"
                             width={173.33}
                             height={35}

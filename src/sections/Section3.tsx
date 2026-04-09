@@ -52,7 +52,7 @@ export default function Section3() {
                     />
                     {/* ICON STRIP */}
                     <Image
-                        src="/images/icons.png"
+                        src="/images/Icons.png"
                         alt=""
                         width={139}
                         height={582}

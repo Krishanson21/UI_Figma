@@ -9,7 +9,7 @@ export default function Section4() {
                 {/* LEFT → COLLAGE */}
                 <div className="w-full md:w-[700px]">
                     <Image
-                        src="/images/col.png"
+                        src="/images/Col.png"
                         alt="students collage"
                         width={600}
                         height={651}
@@ -25,7 +25,7 @@ export default function Section4() {
 
                         {/* AERO ICON */}
                         <Image
-                            src="/icons/aero.png"
+                            src="/icons/Aero.png"
                             alt="arrow"
                             width={64}
                             height={64}
