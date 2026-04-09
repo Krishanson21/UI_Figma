@@ -100,7 +100,7 @@ export default function Section7() {
             alt=""
             width={290}
             height={160}
-            className="absolute bottom-[170px] right-[-210px] rounded-[12px] z-10"
+            className="absolute bottom-[170px] right-[-210px] md:bottom-[-15px] md:right-[-50px] rounded-[12px] z-10"
           />
 
           {/* SMALL AVATAR */}
