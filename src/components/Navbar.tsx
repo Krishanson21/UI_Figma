@@ -1,14 +1,14 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import styles from "@/components/navbar.module.css"
+import "@/app/globals.css"
 
 export default function Navbar() {
   return (
     <nav className="bg-white">
-      <div className="w-full flex items-center justify-between h-[96px] px-[20px] md:px-[80px]">
+      <div className={styles.container}>
 
-        {/* LEFT */}
-        <div className="flex items-center gap-[48px]">
-
+        <div className={styles.lcontainer}>
           <Image
             src="/images/Logo.png"
             alt="Logo"
@@ -17,22 +17,12 @@ export default function Navbar() {
             priority
           />
 
-          {/* Menu */}
-          <ul className="hidden lg:flex items-center gap-[48px] font-medium text-[16px] leading-[24px] tracking-[0.5px] text-[#0F172A]">
+          <ul className={styles.links}>
+            <li className={styles.item}>Products</li>
+            <li className={styles.item}>Solutions</li>
+            <li className={styles.item}>Pricing</li>
 
-            <li className="flex items-center h-[48px] px-[8px] py-[12px] cursor-pointer">
-              Products
-            </li>
-
-            <li className="flex items-center h-[48px] px-[8px] py-[12px] cursor-pointer">
-              Solutions
-            </li>
-
-            <li className="flex items-center h-[48px] px-[8px] py-[12px] cursor-pointer">
-              Pricing
-            </li>
-
-            <li className="flex items-center h-[48px] px-[8px] py-[12px] gap-[4px] cursor-pointer">
+            <li className={styles.drop}>
               Resources
               <Image
                 src="/icons/chevron-down.png"
@@ -41,29 +31,18 @@ export default function Navbar() {
                 height={24}
               />
             </li>
-
           </ul>
         </div>
-        {/* RIGHT */}
-        <div className="flex items-center">
 
-          <div className="hidden lg:flex items-center gap-[16px]">
-
-            <button className="h-[48px] px-[8px] py-[12px] flex items-center font-medium text-[16px] leading-[24px] tracking-[0.5px] text-[#0F172A]">
-              Log In
-            </button>
-
-            <button className="w-[153px] h-[48px] flex items-center justify-center px-[16px] py-[12px] border-[2px] border-[#0F172A] rounded-[8px] font-medium text-[16px] leading-[24px] tracking-[0.5px] text-[#0F172A]">
-              Sign Up Now
-            </button>
-
+        <div className={styles.rcontainer}>
+          <div className={styles.buttons}>
+            <button className={styles.login}>Log In</button>
+            <button className={styles.signup}>Sign Up Now</button>
           </div>
 
-          {/* Mobile Icon */}
-          <div className="lg:hidden">
-            <Menu size={28} className="text-[#0F172A]" />
+          <div className={styles.menu}>
+            <Menu size={28} />
           </div>
-
         </div>
 
       </div>

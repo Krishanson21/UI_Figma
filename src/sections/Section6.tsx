@@ -1,159 +1,194 @@
-"use client"
+// import Image from "next/image";
+// import Card from "@/components/Card"
+// export default function Section7() {
+//   return (
+//     <section className="w-full bg-white overflow-hidden px-[20px] md:px-[80px] py-[20px] md:py-[80px]">
+
+//       <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px]">
+
+//         {/* LEFT */}
+//         <div className="w-full md:w-[594px] flex flex-col gap-[32px] text-[#0F172A]">
+
+//           <h2 className="font-[800] text-[32px] md:text-[56px] leading-[110%]">
+
+//             All the cool{" "}
+//             <span className="relative inline-block">
+//               <span className="relative z-10">features</span>
+
+//               <Image
+//                 src="/images/vector14.png"
+//                 alt=""
+//                 width={190}
+//                 height={12}
+//                 className="absolute left-0 bottom-[-6px] z-0"
+//               />
+//             </span>
+
+//           </h2>
+
+//           <p className="font-[400] text-[16px] md:text-[20px] leading-[180%]">
+//             Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac.
+//             In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque
+//             quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non
+//             viverra a, neque orci.
+//           </p>
+
+//           <div className="flex items-center gap-[8px] text-[#2563EB] font-[500] text-[16px] md:text-[20px] cursor-pointer">
+//             <span>View all the features</span>
+//             <span>→</span>
+//           </div>
+
+//         </div>
+
+//         {/* RIGHT */}
+//         <div className="relative w-full md:w-[600px] h-auto md:h-[500px]">
+//           <Image
+//             src="/images/Icons.png"
+//             alt=""
+//             width={139}
+//             height={582}
+//             className="absolute left-[100px] top-[-160px] md:left-[320px] md:top-[-70px] md:w-[139px] md:h-[582px] rotate-[190deg] z-10"
+//           />
+
+//           <Image
+//             src="/images/Blob3.png"
+//             alt=""
+//             width={446}
+//             height={378}
+//             className="object-contain z-0 rotate-[-15deg]"
+//           />
+
+//           {/* TOP CARD */}
+//           <div className="flex relative md:absolute bottom-[420px] md:bottom-[240px] w-full justify-start px-[20px] md:px-[40px] z-20">
+
+//             <Card
+//               type="popular"
+//               title="Design for how people think"
+//               description="Aliquam ut euismod condimentum elementum ultrices volutpat sit non."
+//               className=" w-[200px] lg:w-[220px]"
+//             />
+
+//           </div>
+
+//           <Image
+//             src="/images/Picture1.png"
+//             alt=""
+//             width={226}
+//             height={238}
+//             className="absolute top-[120px] right-[-60px] md:top-[95px] md:right-[110px] z-10"
+//           />
+
+//           <Image
+//             src="/images/Picture2.png"
+//             alt=""
+//             width={360}
+//             height={160}
+//             className="absolute bottom-[170px] left-[-20px] md:bottom-[-10px] md:left-[20px] rounded-[12px] z-10"
+//           />
+
+//           <Image
+//             src="/images/Picture3.png"
+//             alt=""
+//             width={290}
+//             height={160}
+//             className="absolute bottom-[170px] right-[-210px] md:bottom-[-15px] md:right-[-50px] rounded-[12px] z-10"
+//           />
+
+//           {/* AVATAR */}
+//           <Image
+//             src="/images/Avatar.png"
+//             alt=""
+//             width={100}
+//             height={100}
+//             className="absolute top-[0px] right-[-200px] md:top-[160px] md:right-[85px] z-20"
+//           />
+
+//         </div>
+
+//       </div>
+
+//     </section>
+//   );
+// }
 import Image from "next/image";
-import { useScroll } from "@/components/scroll-logic";
-
+import styles from "@/style/Section6.module.css"
+import "@/app/globals.css"
+import Card from "@/components/Card"
+import cards from "@/app/data/cards.json"
+import data from "@/app/data/headers.json"
 export default function Section6() {
-    const { scrollRef, scrollLeft, scrollRight } = useScroll();
     return (
-        <section className="w-full bg-white overflow-hidden px-[20px] md:px-[80px] py-[60px] md:py-[80px]">
-
-            {/* HEADER */}
-            <div className="flex items-center justify-between mb-[40px] md:mb-[64px]">
-
-                <h2 className="font-[800] text-[28px] md:text-[56px] leading-[110%] text-[#0F172A]">
-                    What everyone says
-                </h2>
-
-                <div className="hidden md:flex items-center gap-[16px]">
-
-                    <button onClick={scrollLeft} className="w-[48px] h-[48px] text-[#EA580C] font-[900] md:text-[32px] rounded-full border-[2px] border-[#EA580C] flex items-center justify-center">
-                        🠔
-                    </button>
-
-                    <button onClick={scrollRight} className="w-[48px] h-[48px] text-[#EA580C] font-[900] md:text-[32px] rounded-full border-[2px] border-[#EA580C] flex items-center justify-center">
-                        🠖
-                    </button>
-
+        <section className="bg-white overflow-hidden">
+            <div className={styles.Header}>
+                <div className={styles.lcontainer}>
+                    <h1 className={styles.title}>
+                        <span className="relative inline-block">
+                            All the cool{" "}
+                            <span className="relative z-10">
+                                features
+                            </span>
+                            <Image
+                                src="/images/vector14.png"
+                                alt="underline"
+                                width={250.5}
+                                height={12.4}
+                                className={styles.vector}
+                            />
+                        </span>
+                    </h1>
+                    <p className={styles.para}>{data[4].para}</p>
+                    <span className={styles.link}><a href=""></a>View all the features ➞</span>
                 </div>
-
-            </div>
-
-            {/* CARDS */}
-            <div
-                ref={scrollRef}
-                className="flex gap-[24px] overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-[10px]"
-            >
-
-                {/* CARD */}
-                <div className="min-w-[300px] md:min-w-[400px] bg-white rounded-[16px] p-[24px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07),0px_20px_25px_-5px_rgba(0,0,0,0.1)] flex flex-col gap-[24px]">
-
-                    <p className="font-[400] text-[16px] md:text-[18px] leading-[160%] text-[#0F172A]">
-                        Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non.
-                        Magna congue nisi maecenas elit aliquet eu sed consectetur.
-                        Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.
-                    </p>
-
-                    <div className="flex items-center gap-[12px]">
-
+                <div className={styles.rcontainer}>
+                    <div className={styles.image}>
                         <Image
-                            src="/images/user1.png"
+                            src="/images/Blob3.png"
+                            alt="blob"
+                            width={624}
+                            height={544}
+                            className={styles.blob3}
+                        />
+                        <Image
+                            src="/images/Picture1.png"
                             alt=""
-                            width={48}
-                            height={48}
-                            className="rounded-full"
+                            width={226}
+                            height={238}
+                            className={styles.pic1}
                         />
 
-                        <div>
-                            <h4 className="font-[500] text-[16px] text-[#0F172A]">
-                                Hellen Jummy
-                            </h4>
-                            <p className="text-[14px] text-[#475569]">
-                                Financial Counselor
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                {/* CARD 2 */}
-                <div className="min-w-[300px] md:min-w-[400px] bg-white rounded-[16px] p-[24px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07),0px_20px_25px_-5px_rgba(0,0,0,0.1)] flex flex-col gap-[24px]">
-
-                    <p className="font-[400] text-[16px] md:text-[18px] leading-[160%] text-[#0F172A]">
-                        Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id.
-                        In tortor turpis viverra sagittis ultrices nisi, nec tortor.
-                        Vestibulum, ultrices ultricies neque, hac ultricies dolor.
-                    </p>
-
-                    <div className="flex items-center gap-[12px]">
-
                         <Image
-                            src="/images/user2.png"
+                            src="/images/Picture2.png"
                             alt=""
-                            width={48}
-                            height={48}
-                            className="rounded-full"
+                            width={360}
+                            height={160}
+                            className={styles.pic2}
                         />
 
-                        <div>
-                            <h4 className="font-[500] text-[16px] text-[#0F172A]">
-                                Ralph Edwards
-                            </h4>
-                            <p className="text-[14px] text-[#475569]">
-                                Math Teacher
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                {/* CARD 3 */}
-                <div className="min-w-[300px] md:min-w-[400px] bg-white rounded-[16px] p-[24px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07),0px_20px_25px_-5px_rgba(0,0,0,0.1)] flex flex-col gap-[24px]">
-                    <p className="font-[400] text-[16px] md:text-[18px] leading-[160%] text-[#0F172A]">
-                        Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam.
-                        Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a.
-                    </p>
-                    <div className="flex items-center gap-[12px]">
                         <Image
-                            src="/images/user3.png"
+                            src="/images/Picture3.png"
                             alt=""
-                            width={48}
-                            height={48}
-                            className="rounded-full"
+                            width={290}
+                            height={160}
+                            className={styles.pic3}
                         />
-                        <div>
-                            <h4 className="font-[500] text-[16px] text-[#0F172A]">
-                                Hellena John
-                            </h4>
-                            <p className="text-[14px] text-[#475569]">
-                                Psychology Student
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                {/* CARD 4 */}
-                <div className="min-w-[300px] md:min-w-[400px] bg-white rounded-[16px] p-[24px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07),0px_20px_25px_-5px_rgba(0,0,0,0.1)] flex flex-col gap-[24px]">
-
-                    <p className="font-[400] text-[16px] md:text-[18px] leading-[160%] text-[#0F172A]">
-                        Sapien, sollicitudin et vitae id et laoreet sapien consectetur.
-                        Felis egestas egestas amet aliquam sit euismod. Pellentesque neque,
-                        sed ut volutpat. Ullamcorper in at nulla dignissim.
-                    </p>
-
-                    <div className="flex items-center gap-[12px]">
-
                         <Image
-                            src="/images/user4.png"
+                            src="/images/Avatar.png"
                             alt=""
-                            width={48}
-                            height={48}
-                            className="rounded-full"
+                            width={120}
+                            height={120}
+                            className={styles.avatar}
                         />
-
-                        <div>
-                            <h4 className="font-[500] text-[16px] text-[#0F172A]">
-                                John Carter
-                            </h4>
-                            <p className="text-[14px] text-[#475569]">
-                                UX Designer
-                            </p>
+                        <div className={styles.cards}>
+                            <Card
+                                type={cards[1].type}
+                                title={cards[1].title}
+                                description={cards[1].description}
+                            />
                         </div>
-
                     </div>
-
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 }

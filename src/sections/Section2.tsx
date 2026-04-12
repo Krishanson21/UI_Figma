@@ -1,93 +1,157 @@
+// import Image from "next/image";
+// import Card from "@/components/Card";
+
+// export default function Section3() {
+//     return (
+//         <section className="bg-white">
+
+//             <div className="w-full px-[20px] md:px-[80px] pt-[60px] md:pt-[80px] pb-[230px] md:pb-[120px] flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px]">
+
+//                 {/* LEFT */}
+//                 <div className="flex flex-col w-full md:w-[544px] gap-[32px] text-[#0F172A]">
+//                     <h2 className="font-[800] text-[32px] md:text-[56px] leading-[110%] tracking-[0]">
+//                         An{" "}
+//                         <span className="relative inline-block">
+//                             <span className="relative z-10">all-in-one</span>
+
+//                             <Image
+//                                 src="/images/vector14.png"
+//                                 alt=""
+//                                 width={260}
+//                                 height={10}
+//                                 className="absolute left-0 bottom-[-8px] z-0"
+//                             />
+//                         </span>{" "}
+//                         app that makes it easier
+//                     </h2>
+
+//                     {/* PARA BLOCK */}
+//                     <div className="flex flex-col gap-[8px] text-[18px] md:text-[20px] leading-[180%] font-[400]">
+
+//                         <p>✔ Est et in pharetra magna adipiscing ornare aliquam.</p>
+//                         <p>✔ Tellus arcu sed consequat ac velit ut eu blandit.</p>
+//                         <p>✔ Ullamcorper ornare in et egestas dolor orci.</p>
+
+//                     </div>
+//                     <div className="flex items-center justify-between w-[277px] h-[56px] px-[8px] py-[16px] rounded-[8px] text-[#2563EB] font-[500] text-[20px] leading-[24px] tracking-[0.5px] cursor-pointer">
+//                         <span>Find more about the app →</span>
+//                     </div>
+//                 </div>
+
+//                 {/* RIGHT */}
+//                 <div className="relative w-full md:w-[700px] flex flex-col items-center md:block">
+//                     <Image
+//                         src="/images/Blob3.png"
+//                         alt=""
+//                         width={386}
+//                         height={308}
+//                         className="absolute left-[-100px] top-[30px] md:left-[-30px] md:top-[50px] z-0"
+//                     />
+//                     {/* ICON STRIP */}
+//                     <Image
+//                         src="/images/Icons.png"
+//                         alt=""
+//                         width={139}
+//                         height={582}
+//                         className="absolute left-[100px] top-[-160px] md:left-[-100px] md:top-[-10px] md:w-[139px] md:h-[582px] rotate-[180deg] z-0"
+//                     />
+//                     <Image
+//                         src="/images/Desktop.png"
+//                         alt=""
+//                         width={800}
+//                         height={350}
+//                         className="relative z-10 rounded-[16px] md:left-[40px] "
+//                     />
+//                     {/* CARDS */}
+//                     <div className="flex absolute bottom-[-170px] md:bottom-[-50px] w-full gap-[16px] overflow-x-auto md:overflow-visible no-scrollbar justify-start md:justify-center px-[10px] md:px-0 z-20">
+//                         <Card
+//                             type="featured"
+//                             title="The map of mathematics"
+//                             description={<> Egestas elit dui <br /> scelerisque ut eu purus aliquam vitae habitasse.</>}
+//                         />
+//                         <Card
+//                             type="popular"
+//                             title="Design for how people think"
+//                             description="Aliquam ut euismod condimentum elementum ultrices volutpat sit non."
+//                         />
+//                         <Card
+//                             type="new"
+//                             title="International & commercial law"
+//                             description="Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui."
+//                         />
+//                     </div>
+
+//                 </div>
+
+//             </div>
+
+//         </section>
+//     );
+// }
 import Image from "next/image";
-
+import styles from "@/style/Section2.module.css"
+import "@/app/globals.css"
+import Card from "@/components/Card"
+import cards from "@/app/data/cards.json"
+import data from "@/app/data/headers.json"
 export default function Section2() {
-  return (
-    <section className="bg-[#F1F5F9] overflow-hidden">
+    return (
+        <section className="bg-white">
+            <div className={styles.Header}>
+                <div className={styles.lcontainer}>
+                    <h1 className={styles.title}>
+                        <span className="relative inline-block">
+                            An{" "}
+                            <span className="relative z-10">
+                                all-in-one
+                            </span>
+                            <Image
+                                src="/images/vector14.png"
+                                alt="underline"
+                                width={250.5}
+                                height={12.4}
+                                className={styles.vector}
+                            />
+                        </span>
+                        {" "}app that makes it easier
+                    </h1>
+                    <p className={styles.para}>{data[2].para}</p>
+                    <p className={styles.para}>✔ Est et in pharetra magna adipiscing ornare aliquam.</p>
+                    <p className={styles.para}>✔ Tellus arcu sed consequat ac velit ut eu blandit.</p>
+                    <p className={styles.para}>✔ Ullamcorper ornare in et egestas dolor orci.</p>
+                    <span className={styles.link}><a href=""></a>Find more about the app ➞</span>
+                </div>
 
-      <div className="relative max-w-[1440px] mx-auto px-[20px] md:px-[80px] pt-[60px] md:pt-[80px] pb-[120px] md:pb-[160px] gap-[48px] md:gap-[80px] flex flex-col items-center gap-[80px] text-center">
-
-        {/* HEADING */}
-        <div className="flex flex-col items-center gap-[32px] text-center max-w-[1280px] mx-auto ">
-
-          <h2 className="font-extrabold text-[32px] md:text-[56px] leading-[1.2] md:leading-[1.1] tracking-[0] text-[#0F172A]">
-            All the{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10">tools</span>
-              <Image
-                src="/images/vector14.png"
-                alt="underline"
-                width={140}
-                height={10}
-                className="absolute left-0 bottom-[-6px] z-0"
-              />
-            </span>{" "}
-            that you need
-          </h2>
-
-          <p className="font-normal text-[16px] md:text-[20px] leading-[1.6] md:leading-[1.8] max-w-[90%] md:max-w-[900px] tracking-[0] text-[#0F172A]">
-            Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br />
-            Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
-          </p>
-
-        </div>
-
-        {/* IMAGE GROUP */}
-        <div className="relative w-full flex justify-center">
-
-          {/* LEFT BLOB */}
-          <Image
-            src="/images/Blob1.png"
-            alt=""
-            width={250.28}
-            height={500.21}
-            className="absolute md:left-[-60px] md:bottom-[35px] md:w-[200px] md:h-[450px]
-            lg:left-[-40px] lg:bottom-[110px] z-0 lg:w-[550px] lg:h-auto
-            left-[-75px] bottom-[10px]"
-          />
-
-          {/* RIGHT BLOB */}
-          <Image
-            src="/images/Blob2.png"
-            alt=""
-            width={223}
-            height={468.65}
-            className=" md:block absolute top-[-100px] left-[320px] z-0
-            lg:top-[-280px] lg:left-[980px] lg:w-[523px] lg:h-[868.65]
-            md:top-[-75px] md:left-[460px] md:w-[423px] md:h-[528.65]"
-          />
-
-          <div className="relative inline-block">
-
-            <Image
-              src="/images/screen.png"
-              alt="screen"
-              width={1100}
-              height={640}
-              className="relative z-10 rounded-[20px]"
-            />
-
-            <Image
-              src="/images/Lines.png"
-              alt="lines"
-              width={1093}
-              height={78}
-              className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 z-0"
-            />
-
-            <div className="absolute bottom-[-80px] left-0 w-full flex justify-between z-10">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
-                <Image
-                  key={i}
-                  src={`/icons/app${i}.png`}
-                  alt=""
-                  width={64}
-                  height={64}
-                />
-              ))}
+                <div className={styles.rcontainer}>
+                    <div className={styles.image}>
+                        <Image
+                            src="/images/Blob3.png"
+                            alt="blob"
+                            width={624}
+                            height={544}
+                            className={styles.blob3}
+                        />
+                        <Image
+                            src="/images/Desktop.png"
+                            alt="blob"
+                            width={624}
+                            height={844}
+                            className={styles.desktop}
+                        />
+                        <div className={styles.cards}>
+                            {cards.map((card, index) => (
+                                <Card
+                                    key={index}
+                                    type={card.type}
+                                    title={card.title}
+                                    description={card.description}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+
+        </section >
+    );
 }

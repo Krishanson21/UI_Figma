@@ -1,0 +1,130 @@
+.Header {
+    font-family: 'Roboto';
+    padding: 48px 18px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.lcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: left;
+}
+.title {
+    font-weight: 800;
+    font-size: clamp(24px, 7vw, 56px);
+    line-height: 110%;
+    color: #0f172a;
+}
+
+.para {
+    font-weight: 400;
+    font-size: clamp(16px, 6vw, 20px);
+    line-height: 160%;
+    color: #0F172A;
+}
+
+.link {
+    font-weight: 500;
+    font-size: clamp(16px, 6vw, 20px);
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #2563eb;
+}
+.vector{
+    position: absolute;
+    left: 45px;
+    bottom: -5px;
+    z-index: 0;
+    width: 135px;
+}
+.blob3{
+    z-index: 0;
+    width: 320px;
+    height: 468px;
+    z-index: 0;
+    position: relative;
+    top: 15px;
+    left: -110px;
+
+}
+.desktop{
+    z-index: 10;
+    position: absolute;
+    top: 660px;
+    left: 0px;
+    height: 364px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    z-index: 20;
+    position: absolute;
+    width: 550px;
+    bottom: 30px;
+    left: 50px;
+}
+
+@media (min-width: 768px) {
+    .Header {
+    font-family: 'Roboto';
+    padding: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    position: relative;
+}
+.lcontainer {
+    width: 544px;
+    height: auto;
+    gap: 32px;
+}
+.vector{
+    position: absolute;
+    left: 85px;
+    bottom: -9px;
+    z-index: 0;
+    width: 245px;
+}
+.blob3{
+    z-index: 0;
+    position: absolute;
+    width: 406px;
+    height: 448px;
+    z-index: 0;
+    top: 105px;
+    left: 720px;
+
+}
+.desktop{
+    z-index: 10;
+    position: absolute;
+    width: 606px;
+    height: 391px;
+    top: 70px;
+    left: 840px;
+    height: 424px;
+}
+.cards{
+    gap: 18px;
+    z-index: 20;
+    position: absolute;
+    width: 570px;
+    bottom: 30px;
+    left: 820px;
+}
+}
