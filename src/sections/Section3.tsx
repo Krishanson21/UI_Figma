@@ -31,7 +31,7 @@ export default function Section3() {
                 <div className={styles.rcontainer}>
                     <div className={styles.image}>
                         <Image
-                            src="/images/col.png"
+                            src="/images/Col.png"
                             alt="loding"
                             width={624}
                             height={544}
