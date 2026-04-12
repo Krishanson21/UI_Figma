@@ -1,6 +1,13 @@
 import styles from "@/components/card5.module.css"
 import Image from "next/image";
-export default function Card({ para, image, name, job }) {
+
+type CardProps = {
+  para: string;
+  image: string;
+  name: string;
+  job: string;
+};
+export default function Card({para, image, name, job}: CardProps) {
     return (
         <div className={styles.container}>
             <div className={styles.para}>

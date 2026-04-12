@@ -1,5 +1,12 @@
 import styles from "@/components/card.module.css"
-export default function Card({ type, title, description, }) {
+
+type CardProps = {
+  type: string;
+  title: string;
+  description: string;
+};
+
+export default function Card({ type, title, description}: CardProps) {
   return (
     <div className={styles.container}>
       <div className={`${styles.type} ${styles[type]}`}>
