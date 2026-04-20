@@ -4,14 +4,14 @@ import "@/app/globals.css"
 import data from "@/app/data/headers.json"
 export default function Section3() {
     return (
-        <section className="bg-white">
+        <section>
             <div className={styles.Header}>
                 <div className={styles.lcontainer}>
                     <div className={styles.text}>
                         <h1 className={styles.title}>
-                            <span className="relative inline-block">
+                            <span className={styles.line}>
                                 <span>
-                                    Meet international
+                                    {data[3].header[0]}
                                 </span>
                                 <Image
                                     src="/icons/Aero.png"
@@ -21,10 +21,10 @@ export default function Section3() {
                                     className={styles.aero}
                                 />
                             </span>
-                            {" "}students & teachers
+                            {" "}{data[3].header[1]}
                         </h1>
                         <p className={styles.para}>{data[3].para}</p>
-                        <span className={styles.link}><a href=""></a>Find more about the app ➞</span>
+                        <span className={styles.link}><a href=""></a>{data[3].link}</span>
                     </div>
                 </div>
 

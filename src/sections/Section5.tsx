@@ -3,12 +3,13 @@ import "@/app/globals.css"
 import styles from "@/style/Section5.module.css"
 import cards from "@/app/data/cards5.json"
 import Card5 from "@/components/Card5"
+import data from "@/app/data/headers.json"
 export default function Section5() {
     return (
         <section className={styles.section}>
             <div className={styles.header}>
                 <h2 className={styles.title}>
-                    What everyone says
+                    {data[4].header}
                 </h2>
 
                 <div className={styles.arrowcon}>

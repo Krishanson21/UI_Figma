@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "@/style//Section7.module.css";
+import data from "@/app/data/headers.json"
 
 export default function Section8() {
     return (
@@ -18,12 +19,12 @@ export default function Section8() {
             />
             <div className={styles.content}>
                 <h2 className={styles.title}>
-                    Join a world of learning
+                    {data[6].header}
                 </h2>
                 <p className={styles.para}>
-                    Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.
+                    {data[6]?.para?.[0]}
                     <br />
-                    Risus elit et fringilla habitant ut facilisi.
+                    {data[6]?.para?.[1]}
                 </p>
 
                 <button className={styles.button}>

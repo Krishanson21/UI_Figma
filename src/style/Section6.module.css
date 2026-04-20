@@ -1,14 +1,14 @@
 .Header {
     font-family: 'Roboto';
-    padding: 48px 18px;
-    max-width: 100%;
+    padding: clamp(24px, 2vw, 80px) clamp(20px, 6vw, 80px);
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .lcontainer {
@@ -28,40 +28,57 @@
 
 .title {
     font-weight: 800;
-    font-size: clamp(24px, 7vw, 56px);
+    font-size: clamp(24px, 6vw, 56px);
     line-height: 110%;
     color: #0f172a;
+    position: relative;
 }
 
 .para {
     font-weight: 400;
-    font-size: clamp(16px, 6vw, 20px);
+    font-size: clamp(16px, 3vw, 20px);
     line-height: 160%;
     color: #0F172A;
+}
+.features{
+    position: relative;
+    z-index: 10;
 }
 
 .link {
     font-weight: 500;
-    font-size: clamp(16px, 6vw, 20px);
+    font-size: clamp(16px, 4vw, 20px);
     line-height: 120%;
     letter-spacing: 0.03em;
     color: #2563eb;
+    cursor: pointer;
 }
 
 .vector {
     position: absolute;
-    left: 160px;
+    left: 55%;
     bottom: -5px;
     z-index: 0;
-    width: 115px;
+    width: clamp(115px, 18vw, 210px);
+    z-index: 0;
+}
+.rcontainer {
+    width: 100%;
+    max-width: 600px;
+}
+.image {
+    position: relative;
+    width: 140%;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
 
-.blob3 {
+.blob4 {
     z-index: 0;
-    width: 400px;
-    height: 488px;
+    width: 75%;
+    height: 95%;
     z-index: 0;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 0px;
 }
@@ -70,23 +87,28 @@
     display: flex;
     flex-direction: row;
     gap: 18px;
-    z-index: 20;
+    z-index: 10;
     position: absolute;
-    width: 550px;
-    top: 420px;
-    left: 30px;
+    width: 120%;
+    height: auto;
+    top: 5%;
+    left: 4%;
+}
+.line{
+    position: relative;
+    display: inline-block;
 }
 
 .pic1 {
-    display: flex;
-    flex-direction: row;
-    z-index: 20;
+    z-index: 10;
     position: absolute;
-    top: 500px;
-    left: 250px;
+    width: 50%;
+    height: auto;
+    top: 15%;
+    left: 45%;
 }
 
-.avatar {
+.avatar {  
     display: none;
 }
 
@@ -95,10 +117,10 @@
     flex-direction: row;
     z-index: 20;
     position: absolute;
-    width: 340px;
+    width: 65%;
     height: auto;
-    bottom: 30px;
-    left: 10px;
+    bottom: 5%;
+    left: 0%;
 }
 
 .pic3 {
@@ -106,25 +128,39 @@
     flex-direction: row;
     z-index: 20;
     position: absolute;
-    width: 270px;
+    width: 50%;
     height: auto;
-    bottom: 30px;
-    left: 330px;
+    bottom: 5%;
+    left: 60%;
 }
 
 @media (min-width: 768px) {
-    .Header {
-        font-family: 'Roboto';
-        padding: 80px;
+        .Header {
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        gap: 80px;
-        position: relative;
     }
 
     .lcontainer {
-        width: 544px;
-        height: auto;
+        flex: 1;
+        max-width: 544px;
+    }
+
+    .rcontainer {
+        flex: 1;
+        max-width: 580px;
+    }
+    .vector {
+        position: absolute;
+        left: 30px;
+    
+    }
+}
+
+@media (min-width: 1203px) {
+
+
+    .lcontainer {
         gap: 32px;
     }
 
@@ -136,33 +172,27 @@
         width: 210px;
     }
 
-    .blob3 {
-        z-index: 0;
-        width: 534px;
-        height: 522px;
-        z-index: 0;
-        top: 0px;
-        left: -20px;
-
+    .blob4 {
+        height: 85%;
+        top: 5%;
+        left: -15%;
     }
 
     .cards {
         gap: 18px;
-        z-index: 20;
+        z-index: 10;
         position: absolute;
         width: 570px;
-        top: 120px;
-        left: 910px;
+        top: 15%;
+        left: -10%;
     }
 
     .pic1 {
-        display: flex;
-        flex-direction: row;
-        z-index: 20;
+        z-index: 10;
         position: absolute;
-        width: 266;
-        top: 170px;
-        left: 1130px;
+        width: 35%;
+        top: 20%;
+        left: 17%;
     }
 
     .avatar {
@@ -170,29 +200,25 @@
         flex-direction: row;
         z-index: 20;
         position: absolute;
-        top: 230px;
-        left: 1300px;
+        top: 28%;
+        left: 41%;
     }
 
     .pic2 {
-        display: flex;
-        flex-direction: row;
         z-index: 20;
         position: absolute;
-        width: 340px;
+        width: 50%;
         height: auto;
-        bottom: 70px;
-        left: 890px;
+        bottom: 19%;
+        left: -13%;
     }
 
     .pic3 {
-        display: flex;
-        flex-direction: row;
-        z-index: 20;
+        z-index: 10;
         position: absolute;
-        width: 270px;
+        width: 40%;
         height: auto;
-        bottom: 70px;
-        left: 1210px;
+        bottom: 19%;
+        left: 34%;
     }
 }

@@ -4,14 +4,14 @@ import "@/app/globals.css"
 import data from "@/app/data/headers.json"
 export default function Header() {
   return (
-    <section className="bg-white">
+    <section className={styles.sectionHeader}>
       <div className={styles.Header}>
         <div className={styles.lcontainer}>
           <div className={styles.text}>
             <h1 className={styles.title}>
-              <span className="relative inline-block">
-                <span className="relative z-10">
-                  Teach
+              <span className={styles.line}>
+                <span className={styles.head}>
+                  {data[0].header[0]}
                 </span>
                 <Image
                   src="/images/vector14.png"
@@ -21,7 +21,7 @@ export default function Header() {
                   className={styles.vector}
                 />
               </span>
-              {" "}students worldwide
+              {data[0].header[1]}
             </h1>
             <p className={styles.para}>{data[0].para}</p>
             <div className={styles.buttons}>

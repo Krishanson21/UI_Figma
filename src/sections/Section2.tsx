@@ -6,14 +6,14 @@ import cards from "@/app/data/cards.json"
 import data from "@/app/data/headers.json"
 export default function Section2() {
     return (
-        <section className="bg-white">
+        <section>
             <div className={styles.Header}>
                 <div className={styles.lcontainer}>
                     <h1 className={styles.title}>
-                        <span className="relative inline-block">
-                            An{" "}
-                            <span className="relative z-10">
-                                all-in-one
+                        <span className={styles.line}>
+                            {data[2].header[0]}{" "}
+                            <span className={styles.head}>
+                                {data[2].header[1]}
                             </span>
                             <Image
                                 src="/images/vector14.png"
@@ -23,41 +23,39 @@ export default function Section2() {
                                 className={styles.vector}
                             />
                         </span>
-                        {" "}app that makes it easier
+                        {" "}{data[2].header[2]}
                     </h1>
                     <p className={styles.para}>{data[2].para}</p>
-                    <p className={styles.para}>✔ Est et in pharetra magna adipiscing ornare aliquam.</p>
-                    <p className={styles.para}>✔ Tellus arcu sed consequat ac velit ut eu blandit.</p>
-                    <p className={styles.para}>✔ Ullamcorper ornare in et egestas dolor orci.</p>
-                    <span className={styles.link}><a href=""></a>Find more about the app ➞</span>
+                    <p className={styles.parab}>{data[2]?.bullet?.[0]}</p>
+                    <p className={styles.parab}>{data[2]?.bullet?.[1]}</p>
+                    <p className={styles.parab}>{data[2]?.bullet?.[2]}</p>
+                    <span className={styles.link}><a href=""></a>{data[2].link}</span>
                 </div>
 
                 <div className={styles.rcontainer}>
-                    <div className={styles.image}>
-                        <Image
-                            src="/images/Blob3.png"
-                            alt="blob"
-                            width={624}
-                            height={544}
-                            className={styles.blob3}
-                        />
-                        <Image
-                            src="/images/Desktop.png"
-                            alt="blob"
-                            width={624}
-                            height={844}
-                            className={styles.desktop}
-                        />
-                        <div className={styles.cards}>
-                            {cards.map((card, index) => (
-                                <Card
-                                    key={index}
-                                    type={card.type}
-                                    title={card.title}
-                                    description={card.description}
-                                />
-                            ))}
-                        </div>
+                    <Image
+                        src="/images/Blob3.png"
+                        alt="blob"
+                        width={624}
+                        height={544}
+                        className={styles.blob3}
+                    />
+                    <Image
+                        src="/images/Desktop.png"
+                        alt="blob"
+                        width={624}
+                        height={844}
+                        className={styles.desktop}
+                    />
+                    <div className={styles.cards}>
+                        {cards.map((card, index) => (
+                            <Card
+                                key={index}
+                                type={card.type}
+                                title={card.title}
+                                description={card.description}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

@@ -8,20 +8,23 @@ import Section6 from "@/sections/Section6";
 import Section7 from "@/sections/Section7";
 import Footer from "@/sections/Footer";
 import Navbar from "@/components/Navbar";
+import styles from "@/app/pages.module.css"
 
 export default function Home() {
   return (
-    <main className="bg-white">
-      <Navbar/>
-      <Header />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Footer/>
+    <main>
+      <div className={styles.page}>
+        <Navbar />
+        <Header />
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+        <Section7 />
+        <Footer />
+      </div>
     </main>
   );
 }

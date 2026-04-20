@@ -29,8 +29,22 @@
     line-height: 110%;
     color: #0f172a;
 }
+.head{
+    position: relative;
+    z-index: 10;
+}
+.line{
+    position: relative;
+    display: inline-block;
+}
 
 .para {
+    font-weight: 400;
+    font-size: clamp(16px, 6vw, 20px);
+    line-height: 160%;
+    color: #0F172A;
+}
+.parab {
     font-weight: 400;
     font-size: clamp(16px, 6vw, 20px);
     line-height: 160%;
@@ -79,19 +93,28 @@
     left: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .Header {
     font-family: 'Roboto';
     padding: 80px;
     flex-direction: row;
+    height: 706px;
     justify-content: space-between;
-    gap: 80px;
     position: relative;
 }
+.rcontainer {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    flex: 1;
+}
 .lcontainer {
-    width: 544px;
+    max-width: 544px;
     height: auto;
     gap: 32px;
+}
+.para {
+    display: none;
 }
 .vector{
     position: absolute;
@@ -103,11 +126,11 @@
 .blob3{
     z-index: 0;
     position: absolute;
-    width: 406px;
-    height: 448px;
+    width: 426px;
+    height: 468px;
     z-index: 0;
-    top: 105px;
-    left: 720px;
+    top: -220px;
+    left: 0px;
 
 }
 .desktop{
@@ -115,16 +138,16 @@
     position: absolute;
     width: 606px;
     height: 391px;
-    top: 70px;
-    left: 840px;
+    top: -270px;
+    left: 50px;
     height: 424px;
 }
 .cards{
     gap: 18px;
     z-index: 20;
     position: absolute;
-    width: 570px;
-    bottom: 30px;
-    left: 820px;
+    width: 580px;
+    top: 30px;
+    left: 20px;
 }
 }

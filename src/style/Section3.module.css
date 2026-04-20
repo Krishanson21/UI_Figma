@@ -25,6 +25,10 @@
     gap: 32px;
     text-align: left;
 }
+.line{
+    position: relative;
+    display: inline-block;
+}
 
 .title {
     font-weight: 800;
@@ -50,9 +54,9 @@
 
 .aero{
     position: absolute;
-    left: 216px;
-    top: -15px;
-    width: 24px;
+    left: 84%;
+    top: -60%;
+    width: 12%;
 }
 
 
@@ -71,6 +75,15 @@
         height: auto;
         gap: 32px;
     }
+
+    .aero {
+        left: 53%;
+        top: 15px;
+        width: 64px;
+        height: 64px;
+    }
+}
+@media (min-width: 1235px) {
 
     .aero {
         left: 385px;

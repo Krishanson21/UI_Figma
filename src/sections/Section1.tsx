@@ -1,15 +1,16 @@
 import Image from "next/image";
 import styles from "@/style/Section1.module.css"
 import "@/app/globals.css"
+import data from "@/app/data/headers.json"
 export default function Section2() {
     return (
         <section className="bg-[#F1F5F9] overflow-hidden">
             <div className={styles.Header}>
                 <div className={styles.ucontainer}>
                     <h1 className={styles.title}>
-                        All the{" "}
-                        <span className="relative inline-block">
-                            <span className="relative z-10">tools</span>
+                        <span>{data[1].header[0]}{" "}</span>
+                        <span className={styles.line}>
+                            <span className={styles.head}>{data[1].header[1]}</span>
                             <Image
                                 src="/images/vector14.png"
                                 alt="underline"
@@ -17,11 +18,10 @@ export default function Section2() {
                                 height={10}
                                 className={styles.vector}
                             />
-                        </span>{" "}
-                        that you need
+                        </span>
+                        {data[1].header[2]}
                     </h1>
-                    <p className={styles.para}>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br />
-                        Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
+                    <p className={styles.para}>{data[1]?.para?.[0]} <br /> {data[1]?.para?.[1]}</p>
                 </div>
                 <div className={styles.blobs}>
                     <Image

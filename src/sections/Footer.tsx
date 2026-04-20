@@ -6,7 +6,6 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.container}>
 
-                <div className={styles.col}>
                     <div className={styles.logo}>
                         <Image
                             src="/images/Logo2.png"
@@ -16,7 +15,7 @@ export default function Footer() {
                         />
                     </div>
                     {data.sections.map((section, index) => (
-                        <div key={index} className={styles.innercol}>
+                        <div key={index} className={styles.col}>
                             <h4 className={styles.footert}>{section.title}</h4>
 
                             {section.links.map((link, i) => (
@@ -28,11 +27,10 @@ export default function Footer() {
                             ))}
                         </div>
                     ))}
-                </div>
             </div>
             <div className={styles.div}></div>
             <div className={styles.bottom}>
-                <p>uteach @ 2023. All rights reserved.</p>
+                <p>uteach @ {new Date().getFullYear()}. All rights reserved.</p>
                 <div className={styles.links2}>
                     <span>Terms</span>
                     <span>Privacy</span>
