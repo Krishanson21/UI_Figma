@@ -47,7 +47,7 @@
 
 .para {
     font-weight: 400;
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 4vw, 20px);
     line-height: 160%;
     color: #0F172A;
 }
@@ -60,15 +60,15 @@
 
 .link {
     font-weight: 500;
-    font-size: clamp(16px, 6vw, 20px);
+    font-size: clamp(16px, 4vw, 20px);
     line-height: 120%;
     letter-spacing: 0.03em;
     color: #2563eb;
 }
 .vector{
     position: absolute;
-    left: 40px;
-    bottom: -5px;
+    left: 35px;
+    bottom: -3px;
     z-index: 0;
     width: 105px;
 }
@@ -116,7 +116,7 @@
 }
 .rcontainer {
     width: 100%;
-    max-width: 660px;
+    max-width: 680px;
     flex: 1;
 }
 .lcontainer {
@@ -151,7 +151,7 @@
     display: block;
     z-index: 10;
     position: absolute;
-    width: 660px;
+    width: 680px;
     /* height: 391px; */
     top: 0px;
     left: 20px;
