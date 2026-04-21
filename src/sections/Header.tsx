@@ -38,15 +38,14 @@ export default function Header() {
           </div>
           <div className={styles.trust}>
             <p>
-              Trusted by <br />
-              leading companies
+              Trusted by <span className={styles.company}>leading companies</span>
             </p>
             <div className={styles.icon}>
-              <Image src="/icons/col1.png" alt="" width={32} height={32} />
-              <Image src="/icons/col2.png" alt="" width={32} height={32} />
-              <Image src="/icons/col3.png" alt="" width={32} height={32} />
-              <Image src="/icons/col4.png" alt="" width={32} height={32} />
-              <Image src="/icons/col5.png" alt="" width={32} height={32} />
+              <Image src="/icons/col1.png" alt="" width={32} height={28} style={{ width: "30px", height: "32px" }}/>
+              <Image src="/icons/col2.png" alt="" width={32} height={28} />
+              <Image src="/icons/col3.png" alt="" width={32} height={28} />
+              <Image src="/icons/col4.png" alt="" width={32} height={28} />
+              <Image src="/icons/col5.png" alt="" width={32} height={28} />
             </div>
           </div>
         </div>

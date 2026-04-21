@@ -56,10 +56,10 @@
 
 .vector {
     position: absolute;
-    left: 55%;
-    bottom: -5px;
+    left: 58%;
+    bottom: -3px;
     z-index: 0;
-    width: clamp(115px, 18vw, 210px);
+    width: clamp(90px, 18vw, 210px);
     z-index: 0;
 }
 .rcontainer {
@@ -75,12 +75,12 @@
 
 .blob4 {
     z-index: 0;
-    width: 75%;
+    width: 85%;
     height: 95%;
     z-index: 0;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -4%;
 }
 
 .cards {
@@ -89,10 +89,10 @@
     gap: 18px;
     z-index: 10;
     position: absolute;
-    width: 120%;
+    width: 100%;
     height: auto;
     top: 5%;
-    left: 4%;
+    left: 0%;
 }
 .line{
     position: relative;
@@ -102,9 +102,9 @@
 .pic1 {
     z-index: 10;
     position: absolute;
-    width: 50%;
+    width: 45%;
     height: auto;
-    top: 15%;
+    top: 16%;
     left: 45%;
 }
 
@@ -120,7 +120,7 @@
     width: 65%;
     height: auto;
     bottom: 5%;
-    left: 0%;
+    left: -4%;
 }
 
 .pic3 {
@@ -130,8 +130,8 @@
     position: absolute;
     width: 50%;
     height: auto;
-    bottom: 5%;
-    left: 60%;
+    bottom: 6%;
+    left: 56%;
 }
 
 @media (min-width: 768px) {
@@ -173,7 +173,7 @@
     }
 
     .blob4 {
-        height: 85%;
+        height: 80%;
         top: 5%;
         left: -15%;
     }
@@ -183,16 +183,16 @@
         z-index: 10;
         position: absolute;
         width: 570px;
-        top: 15%;
+        top: 17%;
         left: -10%;
     }
 
     .pic1 {
         z-index: 10;
         position: absolute;
-        width: 35%;
-        top: 20%;
-        left: 17%;
+        width: 32%;
+        top: 22%;
+        left: 18%;
     }
 
     .avatar {
@@ -201,7 +201,7 @@
         z-index: 20;
         position: absolute;
         top: 28%;
-        left: 41%;
+        left: 39%;
     }
 
     .pic2 {

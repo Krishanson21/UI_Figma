@@ -3,14 +3,13 @@
     height: auto;
     background: white;
     border-radius: 16px;
-    padding: 24px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    box-shadow: 0px 0px 12px 0px #00000012, 0px 6px 7px -3px #0000001A;
     flex-shrink: 0;
 }
-
 .con {
     display: flex;
     flex-direction: row;

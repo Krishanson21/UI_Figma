@@ -1,10 +1,13 @@
+"use client"
 import Image from "next/image";
 import "@/app/globals.css"
 import styles from "@/style/Section5.module.css"
 import cards from "@/app/data/cards5.json"
 import Card5 from "@/components/Card5"
 import data from "@/app/data/headers.json"
+import { useScroll } from "@/components/scroll-logic";
 export default function Section5() {
+    const { scrollRef, scrollLeft, scrollRight } = useScroll();
     return (
         <section className={styles.section}>
             <div className={styles.header}>
@@ -13,11 +16,22 @@ export default function Section5() {
                 </h2>
 
                 <div className={styles.arrowcon}>
-                    <button className={styles.arrow}>🠔</button>
-                    <button className={styles.arrow}>🠖</button>
+                    <button onClick={scrollLeft} className={styles.arrow}><Image
+                        src="/images/arrl.png"
+                        alt="icon"
+                        height={24}
+                        width={24}
+                    /></button>
+                    <button onClick={scrollRight} className={styles.arrow}><Image
+                        src="/images/arrr.png"
+
+                        alt="icon"
+                        height={24}
+                        width={24}
+                    /></button>
                 </div>
             </div>
-            <div className={styles.cards}>
+            <div ref={scrollRef} className={styles.cards}>
                 {cards.map((card, index) => (
                     <Card5
                         key={index}

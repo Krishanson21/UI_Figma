@@ -34,7 +34,7 @@ export default function Footer() {
                 <div className={styles.links2}>
                     <span>Terms</span>
                     <span>Privacy</span>
-                    <span>Contact</span>
+                    <span className={styles.contact}>Contact</span>
 
                     <div className={styles.icon}>
                         <Image src="/icons/world.png" alt="" width={24} height={24} />

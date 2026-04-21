@@ -44,8 +44,15 @@ export default function Section2() {
                         src="/images/Desktop.png"
                         alt="blob"
                         width={624}
-                        height={844}
+                        height={400}
                         className={styles.desktop}
+                    />
+                    <Image
+                        src="/images/Desktopmb.png"
+                        alt="blob"
+                        width={500}
+                        height={280}
+                        className={styles.desktopmb}
                     />
                     <div className={styles.cards}>
                         {cards.map((card, index) => (

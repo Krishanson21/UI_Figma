@@ -1,4 +1,4 @@
-import styles from "@/components/card.module.css"
+import styles from "@/components/card6.module.css"
 
 type CardProps = {
   type: string;

@@ -15,7 +15,7 @@ export default function Section2() {
                                 src="/images/vector14.png"
                                 alt="underline"
                                 width={140}
-                                height={10}
+                                height={20}
                                 className={styles.vector}
                             />
                         </span>

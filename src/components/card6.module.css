@@ -1,7 +1,7 @@
 .container {
     border-radius: 10px;
     padding-top: 24px;
-    width: 200px;
+    width: 225px;
     height: fit-content;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     background: #fff;
@@ -76,9 +76,6 @@
 }
 
 @media (max-width: 1080px) {
-    .container {
-    width: 160px;
-}
     .title {
     font-size: 16px;
     line-height: 110%;

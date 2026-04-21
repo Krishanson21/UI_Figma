@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "@/style/Section6.module.css"
 import "@/app/globals.css"
-import Card from "@/components/Card"
+import Card from "@/components/card6"
 import cards from "@/app/data/cards.json"
 import data from "@/app/data/headers.json"
 export default function Section6() {
