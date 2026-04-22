@@ -33,7 +33,7 @@
 
 .para {
     font-weight: 400;
-    font-size: clamp(16px, 6vw, 20px);
+    font-size: clamp(16px, 4vw, 20px);
     line-height: 160%;
     color: #0F172A;
     text-align: center;
@@ -89,6 +89,9 @@
     position: relative;
     z-index: 10;
 }
+.screenmb{
+    display: none;
+}
 
 .icon {
     display: flex;
@@ -118,7 +121,7 @@
     .Header {
         background-color: white;
         padding: 48px 16px;
-        gap: 32px;
+        gap: 5px;
     }
 
     .title {
@@ -135,8 +138,11 @@
         text-align: left;
     }
 
-    .screen {
-        width: 95%;
+    .screen{
+        display: none;
+    }
+    .screenmb {
+        width: 100%;
         height: auto;
         display: flex;
     }
@@ -150,23 +156,27 @@
     }
 
     .blobr {
-        left: 50%;
+        left: 65%;
         top: -130px;
-        width: 55%;
+        width: 50%;
         height: 371px;
     }
 
     .lines {
         position: relative;
-        top: -10px;
+        top: -30px;
         left: 5px;
         height: 50px;
+    }
+    .colimage{
+        display: block;
     }
 
     .icon {
         gap: 24px;
         overflow: visible;
         left: 0px;
+        top: 74%;
     }
 
     .icon .app {

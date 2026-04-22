@@ -48,6 +48,13 @@ export default function Section2() {
                         className={styles.screen}
                     />
                     <Image
+                        src="/images/screenmb.png"
+                        alt="scren"
+                        width={561}
+                        height={652}
+                        className={styles.screenmb}
+                    />
+                    <Image
                         src="/images/Lines.png"
                         alt="lines"
                         width={1040}
